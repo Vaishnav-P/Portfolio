@@ -7,7 +7,19 @@ window.addEventListener("scroll", function () {
     nav.classList.remove("bg-primary", "shadow");
   }
 });
-
+// window.onresize = function (event) {
+//   $(function () {
+//     var w = Math.max(
+//       document.documentElement.clientWidth,
+//       window.innerWidth || 0
+//     );
+//     var h = Math.max(
+//       document.documentElement.clientHeight,
+//       window.innerHeight || 0
+//     );
+//     $("html, body").css({ width: w, height: h });
+//   });
+// };
 var scroll = window.requestAnimationFrame;
 var lookOut = document.querySelectorAll(".show-on-scroll");
 
@@ -26,7 +38,6 @@ var ids = [
   "php-bar",
 ];
 var i = 0;
-let regexPattern = "/w-/[0-9]/";
 function loop() {
   lookOut.forEach(function (element) {
     if (isElementInViewport(element) && element.id === "") {

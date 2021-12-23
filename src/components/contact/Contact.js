@@ -3,7 +3,7 @@ import "./contact.css";
 import { GiPhone } from "react-icons/gi";
 import { AiTwotoneMail } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 const Contact = () => {
   // const formRef = useRef();
@@ -61,7 +61,15 @@ const Contact = () => {
         });
     }
   }, [formErrors]);
-
+  useEffect(() => {
+    if (done && isSubmit) {
+      setFormValues(intialValues);
+      //   const timeout = setInterval(() => {
+      //     setDone(false);
+      //   }, 2000);
+      //   return () => setInterval(timeout);
+    }
+  }, [done, intialValues, isSubmit]);
   const validate = (values) => {
     const errors = {};
     const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
@@ -90,15 +98,15 @@ const Contact = () => {
           <h1 className="c-title">Get in touch with me</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <GiPhone size={50} style={{ fill: "greenyellow" }} />
+              <GiPhone size={50} style={{ fill: "#122932" }} />
               <span>+91 9567416477</span>
             </div>
             <div className="c-info-item">
-              <AiTwotoneMail size={40} style={{ fill: "greenyellow" }} />
+              <AiTwotoneMail size={40} style={{ fill: "#122932" }} />
               <span>vaishnavp1997@gmail.com</span>
             </div>
             <div className="c-info-item">
-              <MdLocationPin size={40} style={{ fill: "greenyellow" }} />
+              <MdLocationPin size={40} style={{ fill: "darkred" }} />
               <span>Palakkad,Kerala</span>
             </div>
           </div>

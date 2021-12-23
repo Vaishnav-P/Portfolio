@@ -3,6 +3,7 @@
 }
 .skills {
   padding: 5rem 0 2.5rem 0;
+  height: 100vh;
 }
 .skills > .text {
   width: 70%;
@@ -147,7 +148,7 @@
 }
 @keyframes react-text {
   100% {
-    margin-left: 55%;
+    margin-left: 63%;
   }
 }
 #react-bar {
@@ -155,7 +156,7 @@
 }
 @keyframes react-fill {
   100% {
-    width: 60%;
+    width: 68%;
   }
 }
 #php-text {

@@ -1,9 +1,10 @@
 .footer-basic {
   padding: 20px 0;
-  background-color: #8ef0c2;
+  background-color: #83d1c4fd;
   color: #212122;
+  position: relative;
+  bottom: 0;
 }
-
 .footer-basic ul {
   padding: 0;
   list-style: none;

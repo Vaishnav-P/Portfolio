@@ -1,19 +1,18 @@
 .c {
-  height: 100vh;
-  position: relative;
+  height: 100%;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 7rem;
+  display: flex;
 }
 .c-bg {
   width: 30px;
-  height: 100%;
-  background-color: rgb(64, 236, 22);
-  position: absolute;
+  background-color: #122932;
+  height: 60em;
 }
 .c-wrapper {
   display: flex;
   padding: 50px;
-  justify-content: space-around;
+  width: 100%;
 }
 .c-left {
   flex: 1;
@@ -21,9 +20,9 @@
 .c-right {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
+  /* align-items: center;
+  justify-content: flex-start; */
+  /* flex-direction: column; */
   padding: 0px;
 }
 .c-info-item {
@@ -72,7 +71,7 @@ form h2 {
   color: rgb(13, 35, 110);
   width: 100%;
   text-align: center;
-  background-color: rgb(165, 243, 63);
+  background-color: rgb(28, 148, 142);
   border-radius: 30px 30px 0px 0px;
 }
 form input {
@@ -110,14 +109,21 @@ form p {
   margin-left: 5px;
 }
 button {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 480px) {
+  .c {
+    padding: 0;
+    height: 100%;
+  }
   .c-wrapper {
     flex-direction: column;
-    padding: 0px 50px;
+    padding: 0px 30px;
+    margin-bottom: 40px;
   }
-
+  .c-bg {
+    display: none;
+  }
   .c-title {
     font-size: 30px;
   }
@@ -129,9 +135,14 @@ button {
 
   .c-right {
     padding: 0px;
+    margin: 10px;
   }
   .c-info-item {
     font-size: 1rem;
+  }
+  .c-left {
+    margin: 0px;
+    padding-bottom: 50px;
   }
   form {
     width: 100%;
@@ -148,7 +159,7 @@ button {
   }
   .inputs {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
     padding: 0px;
     margin: 0px;

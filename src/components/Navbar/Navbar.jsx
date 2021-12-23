@@ -2,8 +2,8 @@ import React from "react";
 import "./navbar.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-scroll";
-import Resume from "../../image/VaishnavResume.pdf";
-const time = 1000;
+import Resume from "../../image/Resume.pdf";
+const time = 600;
 const Navbar = () => {
   return (
     <section id="home">

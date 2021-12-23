@@ -11,6 +11,11 @@
   font-size: 3.5rem;
   font-family: "Raleway", sans-serif;
 }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .banner-image {
   display: none;
   background-image: url("../../image/Pic3.jpg");

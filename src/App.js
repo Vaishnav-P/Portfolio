@@ -9,14 +9,14 @@ import Contact from "./components/contact/Contact";
 function App() {
   // ImportScript("./script.js");
   return (
-    <>
+    <div className="main">
       <Navbar />
       <Intro />
       <About />
       <Skills />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
